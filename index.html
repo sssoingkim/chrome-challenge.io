@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sssoing Chrome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+    <time id="now-time" class="clock">1월 22일 12:00</time>
+    <h1 class="title_main">Welcome, <span id="nickname" class="nickname"></span></h1>
+    <div id="login-area" class="box_area">
+        <h2 class="title_login">LOGIN</h2>
+        <form>
+            <input type="text" id="input-nickname" class="input_nickname" placeholder="Put your NICKNAME">
+            <button type="submit" id="button-login">LOGIN</button>
+            <p id="notice-login" class="notice hidden">✔️ Please put your nickname!</p>
+        </form>
+    </div>
+    <div id="todo-area" class="box_area todo_area hidden">
+        <h2 class="title_todo">TO-DO</h2>
+        <form id="todo-form">
+            <input type="text" id="input-todo" class="input_todo" placeholder="I have to do ...">
+            <button type="submit" id="button-todo">SUBMIT</button>
+        </form>
+        <div class="list_wrap">
+            <ul id="todo-list" class="todo_list"></ul>
+        </div>
+    </div>
+    <div class="geolocation_area">
+        <div id="location" class="location"></div>
+        <div id="weather" class="weather"></div>
+    </div>
+
+    <script src="js/clock.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/geolocation.js"></script>
+</div>
+</body>
+</html>
